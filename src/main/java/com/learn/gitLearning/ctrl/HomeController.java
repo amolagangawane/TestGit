@@ -12,4 +12,10 @@ public class HomeController {
 		System.out.println("ctrl called ");
 		return "welcome";
 	}
+	
+	@RequestMapping(value="/login", method = RequestMethod.GET)
+	public String login() {
+		System.out.println("login method called ");
+		return "success";
+	}
 }
